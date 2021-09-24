@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".vista">
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="22sp"
+        android:layout_marginTop="22sp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titulo:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/titulores"
+            android:background="@drawable/estiloedit"
+            android:layout_marginLeft="12sp"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:hint="Tittle"
+            android:padding="12sp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:inputType="text"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="22sp"
+        android:layout_marginTop="22sp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginTop="-70sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripcion:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/desre"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_marginLeft="12sp"
+            android:background="@drawable/estiloedit"
+            android:hint="nota1"
+            android:inputType="text"
+            android:padding="12sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="22sp"
+        android:layout_marginTop="22sp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autor:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/autorres"
+            android:background="@drawable/estiloedit"
+            android:inputType="text"
+            android:layout_marginLeft="12sp"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:padding="12sp"
+            android:hint="samuel chorro"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:gravity="center"
+    android:layout_marginTop="40sp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrar"
+        android:layout_marginRight="10sp"
+        android:background="@drawable/estilobtn"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:onClick="borrar"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        android:layout_marginLeft="30sp"
+        android:background="@drawable/estilobtn"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        />
+
+
+</LinearLayout>
+
+
+    <Button
+        app:cornerRadius="40sp"
+        android:paddingHorizontal="52sp"
+        android:backgroundTint="#FA0101"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginTop="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:onClick="back"
+        />
+
+</LinearLayout>

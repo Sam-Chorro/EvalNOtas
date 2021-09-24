@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registro">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de Notas"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        />
+
+
+    <ListView
+        android:id="@+id/list_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        />
+
+    <Button
+        app:cornerRadius="40sp"
+        android:paddingHorizontal="52sp"
+        android:backgroundTint="#FA0101"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginTop="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:onClick="back"
+        />
+
+</LinearLayout>
