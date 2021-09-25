@@ -38,10 +38,14 @@ public class registro extends AppCompatActivity {
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
-                //Bundle enviar = new Bundle();
                 Intent intent = new Intent(registro.this, vista.class);
+
+                String title = (String) list.getItemAtPosition(position);
+
+                intent.putExtra("key",title);
+
                 startActivity(intent);
             }
         });

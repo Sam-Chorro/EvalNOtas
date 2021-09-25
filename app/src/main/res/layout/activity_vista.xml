@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fondo"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
@@ -120,22 +121,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Borrar"
-        android:layout_marginRight="10sp"
-        android:background="@drawable/estilobtn"
+        android:layout_marginLeft="22sp"
+        android:backgroundTint="#DC1212"
+        android:paddingVertical="12sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:cornerRadius="22sp"
         android:paddingLeft="40sp"
         android:paddingRight="40sp"
         android:onClick="borrar"
         />
 
     <Button
+        app:cornerRadius="22sp"
+        android:paddingVertical="12sp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Actualizar"
-        android:layout_marginLeft="30sp"
-        android:background="@drawable/estilobtn"
+        android:layout_marginLeft="10sp"
+        android:backgroundTint="#4CAF50"
         android:paddingLeft="40sp"
         android:paddingRight="40sp"
-        />
+        android:onClick="actualizar"
+       />
 
 
 </LinearLayout>
@@ -144,16 +156,17 @@
     <Button
         app:cornerRadius="40sp"
         android:paddingHorizontal="52sp"
-        android:backgroundTint="#FA0101"
+        android:backgroundTint="#01FAE5"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
         android:layout_marginTop="30sp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="20sp"
         android:onClick="back"
+        android:paddingVertical="8sp"
         />
 
 </LinearLayout>

@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/fondo"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_marginLeft="22sp"
-        android:layout_marginTop="22sp"
+        android:layout_marginTop="52sp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -19,13 +20,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Titulo:"
-            android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
             android:textStyle="bold"
 
             />
 
         <EditText
+            android:textColorHint="#BE000000"
+            android:gravity="center"
             android:id="@+id/titulo"
             android:layout_width="200sp"
             android:layout_height="wrap_content"
@@ -49,20 +52,22 @@
 
 
         <TextView
-            android:layout_marginTop="-70sp"
+            android:layout_marginTop="-30sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Descripcion:"
-            android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
             android:textStyle="bold"
 
             />
 
         <EditText
+            android:textColorHint="#BE000000"
+            android:gravity="center"
             android:id="@+id/des"
             android:layout_width="200sp"
-            android:layout_height="200sp"
+            android:layout_height="150sp"
             android:layout_marginLeft="12sp"
             android:background="@drawable/estiloedit"
             android:hint="nota1"
@@ -84,13 +89,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Autor:"
-            android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
             android:textStyle="bold"
 
             />
 
         <EditText
+            android:textColorHint="#BE000000"
+            android:gravity="center"
             android:id="@+id/autor"
             android:background="@drawable/estiloedit"
             android:inputType="text"
@@ -98,9 +105,10 @@
             android:layout_width="200sp"
             android:layout_height="wrap_content"
             android:padding="12sp"
-            android:hint="samuel chorro"
+            android:hint="chorro"
             android:textStyle="bold"
             android:textSize="18sp"
+            android:textColor="@color/black"
             />
 
 
@@ -113,9 +121,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="40sp"
-        android:background="@drawable/estilobtn"
+        android:backgroundTint="#E91E63"
+        android:paddingVertical="22sp"
+        app:cornerRadius="42sp"
         android:paddingLeft="52sp"
         android:paddingRight="52sp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/white"
         android:text="Guardar"
         android:onClick="guardar"
         />
